@@ -1,7 +1,7 @@
 # 달콤한서울의사계절(달서사)
 달콤한 서울의 사계절을 즐기다, 달.서.사!
 
-##
+## 소개
 사계절 동안 각기 다른 매력을 가지고 있는 서울의 명소를 소개합니다.
 서울의 유명하거나 자신만 알고 있는 명소를 자랑하고 해당 장소 만의 꿀팁을 공유합니다.
 
@@ -14,6 +14,10 @@ GIF를 이용한 밝은 분위기의 GUI는 젊은 사용자의 취향을 고려
 꿀팁 기능은 사용자가 알고 있는 "진짜 유용한" 정보를 공유하며 서울의 명소를 활성화 시킵니다.
 서울의 하이라이트 명소를 제공하여 서울시의 top10 관광지를 소개합니다.
 
+## 앱 이미지
+<img width="269" alt="image" src="https://user-images.githubusercontent.com/13097922/46258197-464eab00-c501-11e8-8cbe-3dda1d0487e8.png"><img width="268" alt="image" src="https://user-images.githubusercontent.com/13097922/46258191-346d0800-c501-11e8-87b1-b527e426f6e6.png"><img width="267" alt="image" src="https://user-images.githubusercontent.com/13097922/46258194-3c2cac80-c501-11e8-84ec-baecbc9ed5c9.png">
+![ezgif com-video-to-gif](https://user-images.githubusercontent.com/13097922/46258179-ff60b580-c500-11e8-9999-f46cf4b273d2.gif) ![ezgif com-video-to-gif-2](https://user-images.githubusercontent.com/13097922/46258180-ff60b580-c500-11e8-9d16-9df4a981da52.gif)
+
 ## 기획배경
 앱서비스 활용 대상은 서울에서 반복되는 일상에서 권태를 느끼는 모든 사람들, 그리고 서울의 일상을 특별하게 만들고 싶은 모든 사람들입니다. 
  
@@ -22,10 +26,6 @@ GIF를 이용한 밝은 분위기의 GUI는 젊은 사용자의 취향을 고려
 그러나 기존의 앱들은 모두 천편일률적으로 ‘4계절 내내 항상 같은 콘텐츠’ 를 추천해줍니다. 분명 사람들은 계절에 따라 색다른 즐길 거리에 대한 니즈가 있습니다. 또한, 서울에 살고 있는 사람들에겐 서울의 사계절을 특별하게 보낼 수 있도록 도와주며, 서울을 여행하는 여행객들에게도 서울의 사계절에 맞게 콘텐츠를 잘 즐길 수 있도록 도와줍니다. 
  
 그렇기에  ‘달콤한 서울의 사계절’  즉, ‘달.서.사’는 서울에 사는 사람들에게는 그저 지나쳤던 서울의 사계절을 특별하게만들어주며, 서울여행객들에게는 특별한 서울의 사계절을 달콤한 추억들로 가득 채워주는, 다양한 사용자들의 니즈를 만족시키는 꼭 필요한 일상여행앱입니다.
-
-## 앱 이미지
-<img width="269" alt="image" src="https://user-images.githubusercontent.com/13097922/46258197-464eab00-c501-11e8-8cbe-3dda1d0487e8.png"><img width="268" alt="image" src="https://user-images.githubusercontent.com/13097922/46258191-346d0800-c501-11e8-87b1-b527e426f6e6.png"><img width="267" alt="image" src="https://user-images.githubusercontent.com/13097922/46258194-3c2cac80-c501-11e8-84ec-baecbc9ed5c9.png">
-![ezgif com-video-to-gif](https://user-images.githubusercontent.com/13097922/46258179-ff60b580-c500-11e8-9999-f46cf4b273d2.gif) ![ezgif com-video-to-gif-2](https://user-images.githubusercontent.com/13097922/46258180-ff60b580-c500-11e8-9d16-9df4a981da52.gif)
 
 ## 기대효과
 서울의 많은 사람들이 일상의 권태를 느끼고 있습니다. 반복되는 일상에 자극을 주기 위해서
