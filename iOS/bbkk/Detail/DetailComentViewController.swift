@@ -27,7 +27,9 @@ class DetailComentViewController: UIViewController {
         
         getComment(playLand_id: playlandId, cursor: 0, size: 100, rank_flag: true, rank_data_size: 5) { [weak self] model in
             self?.model = model?.result.review
-            self?.tableView.reloadData()
+            DispatchQueue.main.async {
+                self?.tableView.reloadData()
+            }
         }
     }
     

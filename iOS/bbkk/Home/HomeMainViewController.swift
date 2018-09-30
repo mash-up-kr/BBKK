@@ -34,16 +34,15 @@ class HomeMainViewController: UIViewController {
             UserDefaults.standard.set(userModel?.result.property, forKey: "typeEnum")
         }
         
-        if let season = UserDefaults.standard.string(forKey: "seasons") {
-
-            getFeed(seasons: season) { [weak self] model in
-                self?.result = model?.result
-                self?.data = model?.result.data
-                DispatchQueue.main.async {
-                    self?.tableView.reloadData()
-                }
+        let season = UserDefaults.standard.string(forKey: "seasons") ?? "SPRING"
+        getFeed(seasons: season) { [weak self] model in
+            self?.result = model?.result
+            self?.data = model?.result.data
+            DispatchQueue.main.async {
+                self?.tableView.reloadData()
             }
         }
+        
     }
     
     private func isHeaderCell(_ indexPath: IndexPath) -> Bool {
