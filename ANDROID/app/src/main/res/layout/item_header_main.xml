@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:orientation="vertical"
+  android:background="@color/gray12"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  <android.support.constraint.ConstraintLayout
+    android:id="@+id/cl_header_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size46"
+    android:background="@color/white5"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toTopOf="@+id/iv_header_image">
+    <ImageView
+      android:id="@+id/iv_close_button"
+      android:layout_width="@dimen/size40"
+      android:layout_height="@dimen/size40"
+      android:src="@drawable/icon_cancel"
+      android:layout_marginEnd="@dimen/size20"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"/>
+
+  </android.support.constraint.ConstraintLayout>
+  <android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size200">
+    <ImageView
+      android:id="@+id/iv_header_image"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/size200"
+      android:scaleType="centerCrop"
+      android:src="@drawable/icon_splash_bg"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintBottom_toBottomOf="parent"/>
+    <ImageView
+      android:id="@+id/iv_header_char"
+      android:layout_width="102dp"
+      android:layout_height="178dp"
+      android:layout_marginTop="41dp"
+      android:src="@drawable/char_adventure"
+      android:scaleType="fitXY"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"/>
+  </android.support.constraint.ConstraintLayout>
+
+  <android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size92"
+    android:background="@color/white5">
+
+    <TextView
+      android:id="@+id/tv_header_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="더위 먹은 코알라"
+      android:textColor="@color/black2"
+      android:textSize="@dimen/text_size13"
+      android:textStyle="bold"
+      app:layout_constraintHorizontal_bias="0.42"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+      android:id="@+id/tv_header_tendency"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/size10"
+      android:background="@drawable/item_radius3_all_red"
+      android:lineSpacingExtra="6sp"
+      android:paddingBottom="@dimen/size1"
+      android:paddingEnd="@dimen/size3"
+      android:paddingStart="@dimen/size3"
+      android:paddingTop="@dimen/size1"
+      android:text="@string/tendency_name_food_fighter"
+      android:textColor="@color/white3"
+      android:textSize="13sp"
+      app:layout_constraintBottom_toBottomOf="@+id/tv_header_name"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/tv_header_name"
+      app:layout_constraintTop_toTopOf="@+id/tv_header_name"
+      app:layout_constraintHorizontal_bias="0"
+
+      />
+  </android.support.constraint.ConstraintLayout>
+  <View
+    android:layout_width="@dimen/match_parent"
+    android:layout_height="@dimen/size1"
+    android:background="@color/gray11"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"/>
+
+  <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginTop="@dimen/size2"-->
+    <!--android:orientation="vertical">-->
+    <!--<android.support.constraint.ConstraintLayout-->
+      <!--android:id="@+id/cl_bookmark_btn"-->
+      <!--android:onClick="openBookmark"-->
+      <!--android:background="@color/white5"-->
+      <!--android:layout_width="match_parent"-->
+      <!--android:layout_marginBottom="@dimen/size1"-->
+      <!--android:layout_height="@dimen/size60">-->
+      <!--<ImageView-->
+        <!--android:id="@+id/iv_bookmark"-->
+        <!--android:layout_width="@dimen/size24"-->
+        <!--android:layout_height="@dimen/size24"-->
+        <!--app:layout_constraintHorizontal_bias="0.35"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:srcCompat="@drawable/icon_favorites" />-->
+
+      <!--<TextView-->
+        <!--android:id="@+id/tv_bookmark"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="@dimen/size13"-->
+        <!--android:lineSpacingExtra="6sp"-->
+        <!--android:text="@string/header_bookmark"-->
+        <!--android:textColor="@color/black0"-->
+        <!--android:textSize="@dimen/text_size13"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintStart_toEndOf="@+id/iv_bookmark"-->
+        <!--app:layout_constraintTop_toTopOf="parent" />-->
+    <!--</android.support.constraint.ConstraintLayout>-->
+      <!--<android.support.constraint.ConstraintLayout-->
+        <!--android:id="@+id/cl_season_btn"-->
+        <!--android:background="@color/white5"-->
+        <!--android:onClick="startSeasonActivity"-->
+        <!--android:layout_marginBottom="@dimen/size1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/size60">-->
+
+        <!--<ImageView-->
+          <!--android:id="@+id/iv_season"-->
+          <!--android:layout_width="@dimen/size24"-->
+          <!--android:layout_height="@dimen/size24"-->
+          <!--app:layout_constraintHorizontal_bias="0.35"-->
+          <!--app:layout_constraintEnd_toEndOf="parent"-->
+          <!--app:layout_constraintBottom_toBottomOf="parent"-->
+          <!--app:layout_constraintStart_toStartOf="parent"-->
+          <!--app:layout_constraintTop_toTopOf="parent"-->
+          <!--app:srcCompat="@drawable/icon_season" />-->
+
+        <!--<TextView-->
+          <!--android:id="@+id/tv_season"-->
+          <!--android:layout_width="wrap_content"-->
+          <!--android:layout_height="wrap_content"-->
+          <!--android:layout_marginStart="@dimen/size13"-->
+          <!--android:lineSpacingExtra="6sp"-->
+          <!--android:text="@string/header_season"-->
+          <!--android:textColor="@color/black0"-->
+          <!--android:textSize="@dimen/text_size13"-->
+          <!--app:layout_constraintBottom_toBottomOf="parent"-->
+          <!--app:layout_constraintStart_toEndOf="@+id/iv_season"-->
+          <!--app:layout_constraintTop_toTopOf="parent" />-->
+      <!--</android.support.constraint.ConstraintLayout>-->
+      <!--<android.support.constraint.ConstraintLayout-->
+        <!--android:id="@+id/cl_style_btn"-->
+        <!--android:onClick="startTendencyActivity"-->
+        <!--android:background="@color/white5"-->
+        <!--android:layout_marginBottom="@dimen/size1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/size60">-->
+
+        <!--<ImageView-->
+          <!--android:id="@+id/iv_style"-->
+          <!--android:layout_width="@dimen/size24"-->
+          <!--android:layout_height="@dimen/size24"-->
+          <!--app:layout_constraintHorizontal_bias="0.35"-->
+          <!--app:layout_constraintEnd_toEndOf="parent"-->
+          <!--app:layout_constraintBottom_toBottomOf="parent"-->
+          <!--app:layout_constraintStart_toStartOf="parent"-->
+          <!--app:layout_constraintTop_toTopOf="parent"-->
+          <!--app:srcCompat="@drawable/icon_style" />-->
+
+        <!--<TextView-->
+          <!--android:id="@+id/tv_style"-->
+          <!--android:layout_width="wrap_content"-->
+          <!--android:layout_height="wrap_content"-->
+          <!--android:layout_marginStart="@dimen/size13"-->
+          <!--android:lineSpacingExtra="6sp"-->
+          <!--android:text="@string/header_style"-->
+          <!--android:textColor="@color/black0"-->
+          <!--android:textSize="@dimen/text_size13"-->
+          <!--app:layout_constraintBottom_toBottomOf="parent"-->
+          <!--app:layout_constraintStart_toEndOf="@+id/iv_style"-->
+          <!--app:layout_constraintTop_toTopOf="parent" />-->
+      <!--</android.support.constraint.ConstraintLayout>-->
+      <!--<android.support.constraint.ConstraintLayout-->
+        <!--android:id="@+id/cl_highlight_btn"-->
+        <!--android:onClick="openHighlight"-->
+        <!--android:background="@color/white5"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/size60">-->
+
+        <!--<ImageView-->
+          <!--android:id="@+id/iv_highlight"-->
+          <!--android:layout_width="@dimen/size24"-->
+          <!--android:layout_height="@dimen/size24"-->
+          <!--app:layout_constraintHorizontal_bias="0.35"-->
+          <!--app:layout_constraintEnd_toEndOf="parent"-->
+          <!--app:layout_constraintBottom_toBottomOf="parent"-->
+          <!--app:layout_constraintStart_toStartOf="parent"-->
+          <!--app:layout_constraintTop_toTopOf="parent"-->
+          <!--app:srcCompat="@drawable/icon_highlight" />-->
+
+        <!--<TextView-->
+          <!--android:id="@+id/tv_highlight"-->
+          <!--android:layout_width="wrap_content"-->
+          <!--android:layout_height="wrap_content"-->
+          <!--android:layout_marginStart="@dimen/size13"-->
+          <!--android:lineSpacingExtra="6sp"-->
+          <!--android:text="@string/header_highlight"-->
+          <!--android:textColor="@color/black0"-->
+          <!--android:textSize="@dimen/text_size13"-->
+          <!--app:layout_constraintBottom_toBottomOf="parent"-->
+          <!--app:layout_constraintStart_toEndOf="@+id/iv_highlight"-->
+          <!--app:layout_constraintTop_toTopOf="parent" />-->
+      <!--</android.support.constraint.ConstraintLayout>-->
+  <!--</LinearLayout>-->
+
+  
+
+</LinearLayout>

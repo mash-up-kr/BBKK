@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:background="@color/white5"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  <include
+    android:id="@+id/item_global_header"
+    layout="@layout/item_global_header"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>
+  <android.support.constraint.ConstraintLayout
+    android:id="@+id/cl_timeline_header"
+    android:layout_width="@dimen/match_parent"
+    android:layout_height="@dimen/size100"
+    android:background="@color/white5"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/item_global_header">
+    <TextView
+      android:id="@+id/tv_timeline_title"
+      android:layout_width="@dimen/size220"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/size30"
+      android:layout_marginTop="@dimen/size14"
+      android:lineSpacingExtra="5sp"
+      android:ellipsize="none"
+      android:maxLines="2"
+      android:scrollHorizontally="false"
+      android:singleLine="false"
+      android:text="한여름 꿀처럼 시원한 곳 서울의 한강"
+      android:textColor="@color/gray22"
+      android:textSize="@dimen/text_size19"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+      android:id="@+id/tv_timeline_subtitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:lineSpacingExtra="5sp"
+      android:gravity="center"
+      android:paddingEnd="@dimen/size8"
+      android:paddingStart="@dimen/size10"
+      android:paddingTop="@dimen/size4"
+      android:text="한강 유원지"
+      android:textColor="@color/red3"
+      android:textSize="@dimen/text_size10"
+      app:layout_constraintBottom_toBottomOf="@+id/tv_timeline_local_content"
+      app:layout_constraintStart_toEndOf="@+id/tv_timeline_local_content" />
+
+    <ImageView
+      android:id="@+id/iv_like_button"
+      android:layout_width="@dimen/size40"
+      android:layout_height="@dimen/size40"
+      android:layout_marginEnd="@dimen/size21"
+      android:layout_marginTop="24dp"
+      android:visibility="gone"
+      android:src="@drawable/icon_star_gray"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+      android:id="@+id/iv_timeline_local_icon"
+      android:layout_width="@dimen/size8"
+      android:layout_height="@dimen/size9"
+      android:layout_marginBottom="@dimen/size18"
+      android:src="@drawable/icon_location"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="@id/tv_timeline_title" />
+
+    <TextView
+      android:id="@+id/tv_timeline_local_content"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/size2"
+      android:lineSpacingExtra="4sp"
+      android:text="서울 영등포구 여의동로 330"
+      android:textColor="@color/gray23"
+      android:textSize="@dimen/text_size9"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="@id/iv_timeline_local_icon"
+      app:layout_constraintStart_toEndOf="@id/iv_timeline_local_icon"
+      app:layout_constraintTop_toTopOf="@id/iv_timeline_local_icon" />
+  </android.support.constraint.ConstraintLayout>
+  <com.glide.slider.library.SliderLayout
+    android:id="@+id/sl_timeline_images"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size290"
+    android:background="@color/white5"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/cl_timeline_header" />
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/sl_timeline_images">
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingTop="@dimen/size26"
+      android:paddingBottom="@dimen/size26"
+      android:paddingStart="@dimen/size30"
+      android:paddingEnd="@dimen/size30"
+      android:orientation="vertical">
+      <TextView
+        android:id="@+id/tv_content_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="더위 먹은 코알라"
+        android:textSize="@dimen/text_size15"
+        android:textColor="@color/black77"
+        android:textStyle="bold"
+        android:lineSpacingExtra="6sp"
+        android:layout_marginBottom="@dimen/size2"/>
+      <TextView
+        android:id="@+id/tv_content_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="한강은 그늘이 없어서 힘들줄..벗뜨..!!그늘있고 바람  잘 드는 자리 찾았어요! 주변에 치즈케이크 파는 카페를 찾아서 테이크 아웃해서 한강 보면서 먹었는데 뻥안치고 눈물 흘림 ㅜ 진짜 엄청 엄청 맛있음! 여기 안가본 사람이랑은 겸상 안함!&gt;&lt; 여기에 오리도 살아!!꽥꽥!! 여기 꼭 가보세요! 정말 강추강추 별 다섯개도 모자라용!"
+        android:textSize="@dimen/text_size12"
+        android:lineSpacingExtra="6sp"
+        android:textColor="@color/black77"/>
+    </LinearLayout>
+  </ScrollView>
+  <android.support.constraint.ConstraintLayout
+    android:id="@+id/cl_review_button"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size48"
+    android:background="@color/red1"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent">
+    <TextView
+      android:id="@+id/tv_review_button_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:lineSpacingExtra="9sp"
+      android:text="@string/review_button"
+      android:textColor="@color/white5"
+      android:textSize="@dimen/text_size19"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintBottom_toBottomOf="parent"/>
+    <TextView
+      android:id="@+id/tv_review_counter"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:lineSpacingExtra="6sp"
+      android:gravity="left"
+      android:text=""
+      android:layout_marginStart="@dimen/size4"
+      android:textColor="@color/white3"
+      android:textSize="@dimen/text_size13"
+      app:layout_constraintTop_toTopOf="@id/tv_review_button_title"
+      app:layout_constraintBottom_toBottomOf="@id/tv_review_button_title"
+      app:layout_constraintStart_toEndOf="@id/tv_review_button_title"/>
+  </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
