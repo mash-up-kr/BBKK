@@ -1,0 +1,37 @@
+spring:
+  profiles:
+    active: default
+logging:
+  level:
+    root: info
+
+---
+
+spring:
+  profiles: dev
+logging:
+  level:
+    root: info
+
+---
+
+spring:
+  profiles: test
+logging:
+  level:
+    root: debug
+  level.org.hibernate:
+    SQL: debug
+    type.descriptor.sql.BasicBinder: trace
+
+---
+
+spring:
+  profiles: production
+logging:
+  level:
+    root: info
+  file: logs/dev_app.log
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+    file: "%d %-5level [%thread] %logger : %msg%n"
