@@ -1,0 +1,6 @@
+framework module FCUUID {
+  umbrella header "FCUUID-umbrella.h"
+
+  export *
+  module * { export * }
+}

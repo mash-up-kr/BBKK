@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lk7-jX-Epj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Page View Controller-->
+        <scene sceneID="SdU-2f-mcl">
+            <objects>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Lk7-jX-Epj" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H5U-aX-uS1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="199" y="-215"/>
+        </scene>
+        <!--Image Page View Controller-->
+        <scene sceneID="g9s-Wn-anm">
+            <objects>
+                <viewController storyboardIdentifier="ImagePageViewController" id="0YB-nt-ZfW" customClass="ImagePageViewController" customModule="bbkk" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uvx-6c-1WK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nxE-N4-7bR">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nxE-N4-7bR" firstAttribute="leading" secondItem="84y-M9-ZeY" secondAttribute="leading" id="2dx-WR-9u2"/>
+                            <constraint firstItem="84y-M9-ZeY" firstAttribute="trailing" secondItem="nxE-N4-7bR" secondAttribute="trailing" id="7mS-YD-WPU"/>
+                            <constraint firstItem="84y-M9-ZeY" firstAttribute="bottom" secondItem="nxE-N4-7bR" secondAttribute="bottom" id="TFa-H1-bgE"/>
+                            <constraint firstItem="nxE-N4-7bR" firstAttribute="top" secondItem="84y-M9-ZeY" secondAttribute="top" id="p09-dQ-RNC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="84y-M9-ZeY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="nxE-N4-7bR" id="tnZ-yD-5hk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nyk-zU-Fy3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="865" y="-215"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,9 @@
+target 'bbkk' do
+  use_frameworks!
+  pod 'FCUUID'
+  pod 'Alamofire'
+  pod 'Moya'
+  pod 'YPImagePicker',  :git => 'https://github.com/JeaSungLEE/YPImagePicker.git'
+  pod 'Kingfisher'
+  pod 'SwiftyGif'
+end
